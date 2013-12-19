@@ -1,0 +1,10 @@
+{% import "helpers/forms.html" as forms %}
+{% block title %}Welcome to WMS (Ware House Management System){% endblock %}
+<form action="/site" method="POST">
+<fieldset>
+<legend>Add A New Product</legend>
+{{ forms.render(site_form) }}
+<p><input type="Submit" value="Save Site"></p>
+</fieldset>
+</form>
+
